@@ -55,7 +55,7 @@ preciocasa(fer,60000).
 
 
 quecasapuedocomprar(Combinacion,Plata,Vuelto):-
-    findall(Unapropiedad,(preciocasa(Persona,Precio),puedecomprar(Precio,Plata,Unapropiedad)),Listapropieddades),
+    findall(Unapropiedad,(preciocasa(_,Precio),puedecomprar(Precio,Plata,Unapropiedad)),Listapropieddades),
     combinacionquecumple(Listapropieddades,Combinacion,Plata,Vuelto).
 
 puedecomprar(Precio,Plata,Persona):-
